@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Display Secret
-        run: echo ${{HYPIXEL_KEY}} | sed 's/./& /g'
+        run: echo $HYPIXEL_KEY | sed 's/./& /g'
         env:
           HYPIXEL_KEY: ${{secrets.HYPIXEL_KEY}} 
 
